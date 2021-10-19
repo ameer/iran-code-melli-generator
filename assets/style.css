@@ -87,9 +87,12 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 5px;
-  min-width: 320px;
+  max-width: 40rem;
   text-align: center;
   margin-bottom: 2rem;
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%;
 }
 .btn {
   all: unset;
