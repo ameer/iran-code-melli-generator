@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Vazir';
+	src: url('fonts/Vazir-Variable.woff') format('woff supports variations'),
+       url('fonts/Vazir-Variable.woff') format('woff-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+@font-face {
+	font-family: 'Vazir';
+	src: url('fonts/Vazir-Variable.woff2') format('woff2 supports variations'),
+       url('fonts/Vazir-Variable.woff2') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+html {
+  height: 100vh;
+}
+body {
+  font-family: 'Vazir';
+  color: #fdfefe;
+  margin: 0;
+  height: 100%;
+  background-color: #111111;
+}
+.container {
+  position: relative;
+  padding: 2rem;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.blobs-container {
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.blobs-inner {
+  position: relative;
+  height: 100%;
+}
+.blob {
+  position: absolute;
+  width: 100%;
+  max-width: 128px;
+  opacity: 0.2;
+}
+.blob:nth-child(1) {
+  top: 0;
+  right: 0;
+}
+.blob:nth-child(2) {
+  bottom: 18%;
+  right: 30%;
+  max-width: 256px;
+}
+.blob:nth-child(3) {
+  top: 25%;
+  left: 25%;
+}
+.box {
+  z-index: 1;
+  align-items: center;
+  background: rgba(246, 247, 247, 0.07);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+#code-melli {
+  font-size: 2rem;
+  font-family: 'Vazir';
+  font-weight: bold;
+  letter-spacing: 2rem;
+  padding-left: 2rem;
+  background-color: rgb(252, 253, 253, .1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  min-width: 320px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.btn {
+  all: unset;
+  background-color: royalblue;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateY(0px);
+  transition: all .3s ease-out;
+}
+.btn:hover {
+  background-color: #20377e;
+}
+.btn:active {
+  transform: translateY(3px);
+}
